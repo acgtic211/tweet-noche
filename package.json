@@ -1,0 +1,42 @@
+{
+  "name": "noche",
+  "version": "0.0.0",
+  "description": "Proyecto para la noche de los investigadores",
+  "license": "MIT",
+  "main": "",
+  "repository": "noche",
+  "author": {
+    "name": "Paco",
+    "email": "paco.garcia@ual.es",
+    "url": ""
+  },
+  "scripts": {
+    "build:sass": "sass  --no-source-map src/styles:dist/assets/css",
+    "build:js": "uglifyjs --compress --mangle --output dist/assets/js/index.js -- dist/assets/js/index-min.js",
+    "copy:html": "copyfiles -u 2 ./src/templates/*.html dist",
+    "copy:assets": "copyfiles -u 1 ./src/assets/**/* dist",
+    "copy:images": "copyfiles -u 1 ./src/images/**/* dist/assets/",
+    "copy:js": "copyfiles -u 2 ./src/scripts/index.js dist/assets/js/",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:js": "onchange 'src/scripts/index.js' -- npm run copy:js",
+    "watch:sass": "sass  --no-source-map --watch src/sass:dist/assets/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server dist --files dist",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:* build:*",
+    "postbuild": "postcss dist/css/*.css -u autoprefixer cssnano -r --no-map"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.0.17",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.8",
+    "uglify-js": "^3.17.2"
+  }
+}
