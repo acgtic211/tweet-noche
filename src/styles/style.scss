@@ -35,15 +35,15 @@ img {
 	border: 0;
 }
 p, footer {
-	margin: 1em 0 .5em;
+	margin: 0;
 	color: silver;
 }
 footer {
 	font-size: .8em;
 	margin-top: 2em;
-	padding: 1em;
+	padding: 0;
 	text-align: right;
-	position: absolute; bottom: 0; right: 0; border: 0;
+	position: fixed; bottom: 24px; right: 24px; border: 0;
 }
 footer .logo {
 	display: inline-block;
@@ -156,6 +156,10 @@ footer .logo {
 
 /* Legend */
 
+.legendbox{
+	padding: 0.5em;
+}
+
 ul {
 	padding: 0;
 }
@@ -193,6 +197,9 @@ input[type=button] {
   	font-size: 1em;
   	line-height: 1.4em;
   	padding: 0.3em 1.4em;
+	position: fixed;
+	bottom: 24px;
+	left: 24px;
 }
 .control {
 	width: 200px;

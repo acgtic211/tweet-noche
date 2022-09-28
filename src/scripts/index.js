@@ -73,16 +73,20 @@
         'brilliant', 'glorious', 'cheerful', 'gracious', 'grateful', 'splendid', 'superb', 'honorable', 'thankful', 'inspirational',
         'ecstatic', 'victorious', 'virtuous', 'proud', 'wonderful', 'lovely', 'delightful', 'excelente', 'increíble', 'hermos', 'agradable', 'maravillos', 'magnífic', 'fabulos', 'asombros', 'fantástic', 'pacífic', 'afortunad',
         'brillante', 'glorios', 'alegre', 'gentil', 'agradecid', 'espléndid', 'excelente', 'honorable', 'agradecid', 'inspirador',
-        'extátic', 'victorios', 'virtuos', 'orgullos', 'maravillos', 'encantador', 'positiv', 'spectacul'
+        'extátic', 'victorios', 'virtuos', 'orgullos', 'maravillos', 'encantador', 'positiv', 'spectacul', ' si ', 'mejor'
     ];
     var happyWords = [
         'happy', 'lucky', 'awesome', 'excited', 'fun', 'amusing', 'amused', 'pleasant', 'pleasing', 'glad', 'enjoy',
         'jolly', 'delightful', 'joyful', 'joyous', ':-)', ':)', ':-D', ':D', '=)', '☺',
-        'feliz', 'afortunado', 'increíble', 'emocionad', 'divertid', 'entretenid', 'divertid', 'agradable', 'agradable', 'alegre', 'disfrut', 'alegre', 'encantador', ' alegre ', ' alegre ', 'amig'
+        'feliz', 'afortunado', 'increíble', 'emocionad', 'divertid', 'entretenid', 'divertid', 'agradable', 'agradable', 'alegre', 'disfrut', 'alegre', 'encantador', ' alegre ', ' alegre ', 'amig', 'perfect',
+        // list of happy emojis
+        '😀', '😃', '😄', '😁', '😆', '😅', '😂', '🤣', '☺️', '😊', '😇', '🙂', '🙃', '😉', '😌', '😍', '🥰', '😘', '😗', '😙', '😚', '😋', '😛', '😝', '😜', '🤪', '🤨', '🧐', '🤓', '😎', '🤩', '🥳', 
     ];
     var lovelyWords = [
         "amor", "adora", "feliz", "sincer", "cariños", "adorable", "cariñ", "kawaii", "casad", "comprom",
-        "amar", "adora", "favorit"
+        "amar", "adora", "favorit", "sincer", "cariños", "adorable", "cariñ", "kawaii", "casad", "comprom",
+        // list of lovely emojis
+        "❤", "💕", "💞", "💓", "💗", "💖", "💘", "💝", "💟", "💜", "💛", "💚", "💙", "🧡", "🖤", "💯", "💋", "💌", "💍", "💎", "👑", "👒", "👠", "👡", "👢", "👞", "👟", "👙", "👗", "👘", "👚", "👕", "👖", "👔", "👛", "👜", "💼", "🎒", "👝", "👛", "👓", "🕶", "🌂", "☂", "🎩", "🎓", "👑", "👒", "👟", "👞", "👡", "👠", "👢", "👕", "👔", "👚", "👗", "👙", "👘", "👖", "👘", "👙", "👚", "👛", "👜", "💼", "🎒", "👝", "👛", "👓", "🕶", "🌂", "☂", "🎩", "🎓", "👑", "👒", "👟", "👞", "👡", "👠", "👢", "👕", "👔", "👚", "👗", "👙", "👘", "👖", "👘", "👙", "👚", "👛", "👜", "💼", "🎒", "👝", "👛", "👓", "🕶", "🌂", "☂", "🎩", "🎓", "👑", "👏", "orgull",
     ];
     var negativeWords = [
         'unhappy', 'bad', 'sorry', 'annoyed', 'dislike', 'anxious', 'ashamed', 'cranky', 'crap', 'crappy', 'envy',
@@ -94,38 +98,38 @@
         "horrible", "aburrid", "molest", "abatid", "quemad", "caótic", "derrotad", "devastad", "estresad",
         'desconectad', 'desalentad', 'deshonest', 'condenad', 'terrible', 'avergonzad', 'desalojad', 'aterrad', 'frustrad', 'estúpid',
         'culpable', 'sin esperanza', 'horrible', 'horrorizad', 'humillad', 'ignorante', 'inhuman', 'cruel', 'insan', 'insegur',
-        'nervios', 'ofendid', 'oprimid', 'abrumad', 'patétic', 'impotente', 'pobre', 'resentid', 'robad', 'jodid'
+        'nervios', 'ofendid', 'oprimid', 'abrumad', 'patétic', 'impotente', 'pobre', 'resentid', 'robad', 'jodid', ' no ', 'peor', 'acoso', 'agresi', '🤥', 'alert',
     ];
     var sadWords = [
         'sad', 'alone', 'anxious', 'depressed', 'disappointed', 'disappointing', 'sigh', 'sobbing', 'crying', 'cried',
         'dumped', 'heartbroken', 'helpless', 'hurt', 'miserable', 'misunderstood', 'suicidal', ':-(', ':(', '=(', ';(',
         'triste', 'solo', 'sola', 'ansios', 'deprimid', 'decepcionad', 'decepci', 'suspir', 'solloz', 'llora', 'llorando',
-        'dejad', 'desconsolad', 'indefens', 'herid', 'miserable', 'incomprendid', 'suicid'
+        'dejad', 'desconsolad', 'indefens', 'herid', 'miserable', 'incomprendid', 'suicid', 
     ];
     var angryWords = [
         'hate', 'damn', 'angry', 'betrayed', 'bitched', 'disgust', 'disturbed', 'furious', 'harassed', 'hateful', 'hostile', 'insulted',
-        'irritable', 'jealous', ' rage ', 'pissed', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread'
+        'irritable', 'jealous', ' rage ', 'pissed', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'furios', 'hostigad', 'odios', 'hostil', 'insultad', 'irritable', 'celos', 'rabia', 'cabread', 'odio', 'odia', 'maldic', 'enoj', 'traicion', 'disgust', 'perturb', 'fur'
 
     ];
     var sickWords = [
         'sick', ' ill ', 'under weather', 'throw up', 'threw up', 'throwing up', 'puke', 'puking', 'pain', 'hangover', 'intoxicated',
-        'enfermo', 'bajo el clima', 'vomit', 'dolor', 'resaca', 'intoxicad', 'duele'
+        'enfermo', 'bajo el clima', 'vomit', 'dolor', 'resaca', 'intoxicad', 'duele', 'tortur', 
     ];
 
     var nightWords = [
         'nightspain', 'nightgranada', 'nightalmeria', 'nightsevilla', 'nighthuelva', 'nightcadiz', 'nightmalaga', 'nightjaen', 'nightcordoba',
-        'noche europea de los investigadores', 'noche europea de l@s investigador@s'
+        'noche europea de los investigadores', 'noche europea de l@s investigador@s',
     ];
 
 
     /* D3  */
 
-    var width = 900;
+    var width = 950;
     var height = 700;
 
     //var projection = d3.geo.albersUsa();
     var projection = d3.geo.mercator().center([-3, 41])
-        .scale(2900)
+        .scale(3300)
         .rotate([0, 0]);
 
     var color = d3.scale.linear()
@@ -141,7 +145,6 @@
 
     var g = svg.append('g');
 
-    //d3.json('json/us-states.json', function(error, topology) {
     d3.json('json/spain-province.json', function(error, topology) {
         g.selectAll('path')
             .data(topojson.feature(topology, topology.objects.ESP_adm2).features)
@@ -192,17 +195,11 @@
         });
     }
 
-    function getUserInfo(data, callback) {
-        if (!data.geo) return;
+    async function getUserInfo(data, callback) {
+        
+        const userInfo = {};
 
-        var userInfo = {};
-
-        userInfo.lat = data.geo.coordinates[0];
-        userInfo.lon = data.geo.coordinates[1];
-
-        if (userInfo.lat === 0 && userInfo.lon === 0) return;
-
-        var city = data.place.full_name;
+        const city = data.place.full_name;
         userInfo.city = city;
         userInfo.state = data.place.name; //city.substring(city.lastIndexOf(',') + 1).trim();
 
@@ -212,14 +209,37 @@
         userInfo.tweet = data.text;
         userInfo.id_str = data.id_str;
 
-        var date = new Date(parseInt(data.timestamp_ms));
-        var d = date.toDateString().substr(4);
-        var t = (date.getHours() > 12) ? date.getHours() - 12 + ':' + date.getMinutes() + ' PM' : date.getHours() + ':' + date.getMinutes() + ' AM;';
+        const date = new Date(parseInt(data.timestamp_ms));
+        const d = date.toDateString().substr(4);
+        const t = (date.getHours() > 12) ? date.getHours() - 12 + ':' + date.getMinutes() + ' PM' : date.getHours() + ':' + date.getMinutes() + ' AM;';
 
         userInfo.timestamp = t + ' - ' + d;
 
-        console.log(userInfo.tweet);
-        console.log(userInfo.state);
+        if(data.geo) {
+            userInfo.lat = data.geo.coordinates[0];
+            userInfo.lon = data.geo.coordinates[1];
+        } else {
+            const box = data.place.bounding_box.coordinates[0];
+            const lon = (box[0][0] + box[2][0]) / 2;
+            const lat = (box[0][1] + box[2][1]) / 2;
+            userInfo.lat = lat;
+            userInfo.lon = lon;            
+        }
+
+        refineState(userInfo);
+
+        let found = false;
+
+        try{
+            found = document.querySelector('.' + userInfo.state);
+        } catch(e) {
+            console.log(e);
+        }
+
+        if (!found) {
+            await fetchGeoData(userInfo);
+            refineState(userInfo);
+        }
 
         callback(userInfo);
     }
@@ -267,6 +287,9 @@
             var position = projection([user.lon, user.lat]);
             if (position === null) return;
 
+            position[0] = position[0] - 13;
+            position[1] = position[1] - 13;
+
             faceIcon.enter()
                 .append('svg:image')
                 .attr('xlink:href', 'images/' + emotion.icon)
@@ -280,6 +303,7 @@
     function processData(data) {
         if (!data || !data.place || !data.lang) return;
         //if(data.place.country_code !== 'US') return;
+
         if (data.place.country_code !== 'ES') return;
 
         if (nightWords.some(function(v) {
@@ -315,6 +339,7 @@
             })) {
             displayData(data, sick);
         } else {
+            console.log(data.text);
             displayData(data, neutral);
         }
     }
@@ -324,3 +349,25 @@
 
 
 })();
+
+async function fetchGeoData(userInfo) {
+    const lat = userInfo.lat;
+    const lon = userInfo.lon;
+    const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&zoom=18&addressdetails=1`;
+    const response = await fetch(url);
+    const json = await response.json();
+    userInfo.state = json.address.state_district || json.address.province;
+    if (!userInfo.state)
+        userInfo.state = json.address.state;
+}
+
+function refineState(userInfo) {
+    if (userInfo.state.indexOf(' ') > -1) {
+        userInfo.state = userInfo.state.split(' ').pop();
+    }
+
+    if (userInfo.state === 'Gerona')
+        userInfo.state = 'Girona';
+    if (userInfo.state === 'Lérida')
+        userInfo.state = 'Lleida';
+}
