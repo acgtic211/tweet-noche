@@ -164,7 +164,7 @@
     var channel = 'pubnub-twitter';
 
     var pubnub = new PubNub({
-        subscribeKey: 'sub-c-78806dd4-42a6-11e4-aed8-02ee2ddab7fe'
+        subscribeKey: 'sub-c-d00e0d32-66ac-4628-aa65-a42a1f0c493b'
     });
 
     // fetching previous 100 data, then realtime stream
