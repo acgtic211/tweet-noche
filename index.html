@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="./assets/">
+	<title>PubNub x Twitter</title>
+	<meta name="description" content="Twitter Visualizations using PubNub data and D3.js">
+	<meta name="author" content="Tomomi Imura  @girlie_mac">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1><i class="fa fa-twitter"></i> ¿Como se siente España ahora mismo?</h1>
+		<p>Este mapa muestra el estado emocional de cada provincia en un momento determinado. El estado positivo o negativo se determina mediante el análisis de palabras clave utilizadas en tweets. La fuente en tiempo real proviene de <a href="https://twitter.com/pubnub" target="_blank">@PubNub</a> que proporciona acceso directo a los datos de Twitter.
+		</p>
+	</header>
+
+	<section id="main">
+
+		<section id="map" class="map"></section>
+
+		<section class="tweet">
+			<blockquote class="h-entry">
+				<a class="button" role="button" title="Follow on Twitter" href="" target="_blank"><img src="images/twitter-button.png"></a>
+				<div class="header">
+					<div class="name"></div>
+					<div class="screenname"></div>
+				</div>
+				
+				<div class="text"></div>
+				<div class="timestamp"></div>
+
+				<div class="actions">
+					<a class="reply" href="" target="_blank"><i class="fa fa-reply"></i></a>
+					<a class="retweet" href="" target="_blank"><i class="fa fa-retweet"></i></a>
+					<a class="favorite" href="" target="_blank"><i class="fa fa-star"></i></a>
+				</div>
+			</blockquote>
+			<div class="emotion"></div>
+		</section>
+
+		<section class="legendbox">
+			<ul>
+				<li><div class="happy"></div>Más tweets positivos</li>
+				<li><div class="neutral"></div>Igual número de tweets positivos y negativos</li>
+				<li><div class="sad"></div>Más tweets negativos</li>
+			</ul>
+		</section>
+	</section>
+
+	<input type="button" id="toggle" value="Parar">
+
+	<footer>
+		<img class="logo" src="http://acg.ual.es/website/img/logoACGpastel.png">
+		<p>PubNub ❤ Twitter demo usa <a href="https://twitter.com/hashtag/d3js" target="_blank">#d3js</a> por <a href="https://twitter.com/girlie_mac" target="_blank">@girlie_mac</a></p>
+	</footer>
+
+
+	<!--script src="//cdn.pubnub.com/pubnub.min.js"></script-->
+	<script src="//cdn.pubnub.com/sdk/javascript/pubnub.4.3.2.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+	<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+	<script src="js/index.js"></script>
+	
+</body>
+</html>
